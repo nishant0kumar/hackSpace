@@ -147,7 +147,7 @@ main span {
 .card {
     z-index: -1;
     position: relative;
-    animation: slider 10s 4s ease-in-out infinite;
+    animation: slider 25s 3s ease-in-out infinite;
 }
 
 .card p {
@@ -325,7 +325,8 @@ footer {
     }
 
     main p {
-        font-size: 77px;
+        font-size: 65px;
+        margin: 0px;
         margin-bottom: 50px;
         position: sticky;
         top: 10%;
