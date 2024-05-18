@@ -118,10 +118,9 @@ main span {
  */
 .scroll {
   display: flex;  
-  gap: 30px;
+  gap: 40px;
   flex-wrap: nowrap;
   overflow-x: auto;
-  padding: 5px;
   margin: 50px 0px;
   padding: 0px 50px;
 }
@@ -130,13 +129,12 @@ main span {
 @keyframes slider {
     0%{transform: translateX(0%);}
     10%{transform: translateX(-100%);}
-    20%{transform: translateX(-100%);}
-    30%{transform: translateX(-200%);}
-    40%{transform: translateX(-200%);}
-    50%{transform: translateX(-200%);}
-    60%{transform: translateX(-300%);}
-    70%{transform: translateX(-300%);}
-    80%{transform: translateX(-300%);}
+    20%{transform: translateX(-200%);}
+    30%{transform: translateX(-300%);}
+    40%{transform: translateX(-400%);}
+    50%{transform: translateX(-500%);}
+    60%{transform: translateX(-600%);}
+    70%{transform: translateX(-700%);}
     90%{transform: translateX(0%);}
     100%{transform: translateX(0%);}
 }
@@ -149,6 +147,7 @@ main span {
 .card {
     z-index: -1;
     position: relative;
+    animation: slider 10s 4s ease-in-out infinite;
 }
 
 .card p {
@@ -162,8 +161,6 @@ main span {
     height: 350px;
     width: 400px;
     object-fit: cover;
-    z-index: -2;
-    position: inherit;
 }
 
 .fun-activity {
@@ -292,8 +289,12 @@ footer {
     margin: 100px 50px;
 }
 
-.copy {
-    width: 30%;
+.copy p{
+    text-align: center;
+    padding: 25px 0px;
+    background-color: rgb(204, 204, 204);
+    font-family: monospace;
+    color: rgb(0, 0, 0);
 }
 
 .footer-logo {
@@ -304,82 +305,110 @@ footer {
     width: 30%;
 }
 
+@keyframes slidermobile {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-200%);}
+    30%{transform: translateX(-300%);}
+    40%{transform: translateX(-400%);}
+    50%{transform: translateX(-500%);}
+    60%{transform: translateX(-600%);}
+    70%{transform: translateX(-700%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
 @media screen and (max-width:600px){
- .navigation-bar1 {
-    display: none;
- }   
 
- main p {
-    font-size: 80px;
-    margin-bottom: 50px;
- }
+    nav{
+        text-decoration:underline;
+    }
 
- main h1 {
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
- }
+    main p {
+        font-size: 77px;
+        margin-bottom: 50px;
+        position: sticky;
+        top: 10%;
+        z-index: -5;
+    }
 
- .slider {
-    flex-direction: column;
-    gap: 5px;
- }
+    main h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
 
- .image {
-    width: 100%;
- }
+    .slider {
+        flex-direction: column;
+        gap: 5px;
+    }
 
- .image img {
-    height: 350px;
- }
+    .image {
+        width: 100%;
+    }
 
- .image-details {
-    width: 100%;
- }
+    .image img {
+        height: 350px;
+    }
 
- .marathon {
-    flex-direction: column;
- }
+    .image-details {
+        width: 100%;
+    }
 
- .marathon img {
-    width: 100%;
- }
+    .scroll {
+        margin:50px 0px;
+    }
 
- .fun-text {
-    font-size: 35px;
- }
+    .card {
+        animation: slidermobile 25s ease-in-out infinite;
+    }
 
- .ideas1 {
-    font-size: 30px;
- }
+    .marathon {
+        flex-direction: column;
+    }
 
- .idea-container1 {
-    height: 550px;
-    z-index: -3;
- }
+    .marathon img {
+        width: 100%;
+    }
 
- .idea-container1 p, .idea-container2 p, .idea-container4 p {
-    transform: rotate(270deg);
-    text-wrap: nowrap;
-    z-index: -1;
- }
+    .small {
+        font-size: 40px;
+    }
 
- .idea-container2 {
-    height: 150px;
-    z-index: -3;
- }
+    .fun-text {
+        font-size: 35px;
+    }
 
- .idea-container3 {
-    height: 150px;
-    text-align: center;
- }
+    .ideas1 {
+        font-size: 30px;
+    }
 
- .idea-container4 {
-    height: 200px;
-    z-index: -3;
- }
+    .idea-container1 {
+        height: 550px;
+        z-index: -3;
+    }
 
- footer {
-    margin:30px 0;
- }
+    .idea-container1 p, .idea-container2 p, .idea-container4 p {
+        transform: rotate(270deg);
+        text-wrap: nowrap;
+        z-index: -1;
+    }
+
+    .idea-container2 {
+        height: 150px;
+        z-index: -3;
+    }
+
+    .idea-container3 {
+        height: 150px;
+        text-align: center;
+    }
+
+    .idea-container4 {
+        height: 200px;
+        z-index: -3;
+    }
+
+    footer {
+        margin:30px 0px;
+    }
 
 }
