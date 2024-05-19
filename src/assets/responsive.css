@@ -1,0 +1,108 @@
+@keyframes slidermobile {
+    0%{transform: translateX(0%);}
+    10%{transform: translateX(-100%);}
+    20%{transform: translateX(-200%);}
+    30%{transform: translateX(-300%);}
+    40%{transform: translateX(-400%);}
+    50%{transform: translateX(-500%);}
+    60%{transform: translateX(-600%);}
+    70%{transform: translateX(-700%);}
+    90%{transform: translateX(0%);}
+    100%{transform: translateX(0%);}
+}
+
+@media screen and (max-width:600px){
+    .navigation-bar1, .navigation-bar2{
+        display: none;
+    }
+
+    .menu {
+        font-size: 50px;
+    }
+
+    main p {
+        font-size: 65px;
+        margin: 0px;
+        margin-bottom: 50px;
+    }
+
+    main h1 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .slider {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .image {
+        width: 100%;
+    }
+
+    .image img {
+        height: 350px;
+    }
+
+    .image-details {
+        width: 100%;
+    }
+
+    .scroll {
+        margin:50px 0px;
+    }
+
+    .card {
+        animation: slidermobile 25s ease-in-out infinite;
+    }
+
+    .marathon {
+        flex-direction: column;
+    }
+
+    .marathon img {
+        width: 100%;
+    }
+
+    .small {
+        font-size: 40px;
+    }
+
+    .fun-text {
+        font-size: 35px;
+    }
+
+    .ideas1 {
+        font-size: 30px;
+    }
+
+    .idea-container1 {
+        height: 550px;
+        z-index: -3;
+    }
+
+    .idea-container1 p, .idea-container2 p, .idea-container4 p {
+        transform: rotate(270deg);
+        text-wrap: nowrap;
+        z-index: -1;
+    }
+
+    .idea-container2 {
+        height: 150px;
+        z-index: -3;
+    }
+
+    .idea-container3 {
+        height: 150px;
+        text-align: center;
+    }
+
+    .idea-container4 {
+        height: 200px;
+        z-index: -3;
+    }
+
+    footer {
+        margin:30px 0px;
+    }
+
+}

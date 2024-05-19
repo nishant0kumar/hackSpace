@@ -1,0 +1,22 @@
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 50px;
+}
+
+.copy p{
+    text-align: center;
+    padding: 25px 0px;
+    background-color: rgb(172, 172, 172);
+    font-family: monospace;
+    color: rgb(0, 0, 0);
+}
+
+.footer-logo {
+    width: 30%;
+}
+
+.code {
+    width: 30%;
+}
