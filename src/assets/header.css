@@ -1,22 +1,19 @@
-body{
-  background-color: rgb(0, 0, 0);
-  color: rgb(187, 187, 187);
-  background-image: linear-gradient(black,black,grey, black);
-}
-
 header {
   position: sticky;
-  top: 0;
+  top: 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 75px;
   background-color: black;
   width: 100%;
+  z-index: 10;
+  padding: 0px 10px;
 }
 
 .logo {
-  font-size: 30px;
+  margin-top: 10px;
+  height: 60px;
 }
 
 nav a {
@@ -31,4 +28,22 @@ nav a {
 
 .logo-div {
   font-size: 60px;
+}
+
+@media screen and (max-width:600px){
+  .header {
+    justify-content: space-between;
+  }
+  .menu {
+    display: block;
+    font-size: 50px;
+  }
+  .navigation-bar1, .navigation-bar2{
+      display: none;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+  }
 }
