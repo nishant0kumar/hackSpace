@@ -1,5 +1,5 @@
 import '../assets/fun.css';
-import '../assets/responsive.css'
+import chill from '../assets/images/chill.jpg'
 
 function Fun() {
     return(
@@ -28,10 +28,10 @@ function Fun() {
                             <p>Stuck!</p>
                         </div>
                         <div className="idea-container4">
-                            <p>Code & Stuff</p>
+                            <p>Implementation</p>
                         </div>
                         <div className="idea-container3">
-                            <p>Thinking, planning, learning</p>
+                            <p>planning and Learning</p>
                         </div>
                     </div>
             </div>

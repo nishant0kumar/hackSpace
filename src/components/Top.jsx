@@ -1,5 +1,4 @@
 import '../assets/top.css';
-import '../assets/responsive.css';
 
 function Top() {
     return (
