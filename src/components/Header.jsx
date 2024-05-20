@@ -1,5 +1,5 @@
 import '../assets/header.css';
-import '../assets/responsive.css';
+import logo from '../../public/logo.svg'
 
 function Header() {
     
@@ -12,7 +12,7 @@ function Header() {
         </nav>
 
         <div className="logo-div">
-            <p>hackSpace</p>
+            <img className='logo' src={logo} alt="" />
         </div>
 
         <nav className='menu'>
