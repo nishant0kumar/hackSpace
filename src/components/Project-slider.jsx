@@ -61,7 +61,7 @@ function Project(){
             <div className="card"><img src="https://vectorprepandarts.com/wp-content/uploads/2023/03/329202419_5628204377305010_3201239217600583898_n.jpg" alt=""></img><p>Eifo</p></div>
         </div>
     </div>
-    )
+    );
 }
 
 export default Project;
