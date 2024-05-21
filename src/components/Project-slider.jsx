@@ -33,7 +33,7 @@ function Project(){
         alt: 'travel'
     }];
 
-    return(
+    /*return(
         <div className="projects">
             <p>projectsYoucanWork</p>
             <div className="scroll">
@@ -45,7 +45,23 @@ function Project(){
                 })}
             </div>
         </div>
-    );
+    );*/
+
+    return(
+        <div className="projects">
+            <p>projectsYoucanWork</p>
+            <div className="scroll wrapper-holder">
+            <div className="card"><img src={hitchHike} alt=""></img><p>Ride with me</p></div>
+            <div className="card"><img src={college} alt=""></img><p>College</p></div>
+            <div className="card"><img src={films} alt=""></img><p>Film</p></div>
+            <div className="card"><img src={travel} alt=""></img><p>Travel</p></div>
+            <div className="card"><img src="https://vectorprepandarts.com/wp-content/uploads/2023/03/329202419_5628204377305010_3201239217600583898_n.jpg" alt=""></img><p>Community</p></div>
+            <div className="card"><img src={chill} alt=""></img><p>Chill</p></div>
+            <div className="card"><img src={mystery} alt=""></img><p>Solve Mystery</p></div>
+            <div className="card"><img src="https://vectorprepandarts.com/wp-content/uploads/2023/03/329202419_5628204377305010_3201239217600583898_n.jpg" alt=""></img><p>Eifo</p></div>
+        </div>
+    </div>
+    )
 }
 
 export default Project;
